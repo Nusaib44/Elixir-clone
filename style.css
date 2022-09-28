@@ -1,0 +1,228 @@
+
+
+:root{
+    --c-dark:#212529;
+    --c-brand:#4e57d4;
+    --c-brand-lite:#6970dd;
+    --c-rgb:78,87,212;
+    --c-body:#727272;
+    --font-base:'Clash Display', sans-serif;
+    --box-shadow:0px 15px 25px rgba(128, 149, 255, 0.235);
+    --transition:all 0.4s ease;
+}
+
+/* <!-- -------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------- --> */
+
+body{
+    font-family: 'ClashDisplay',sans-serif;
+    line-height: 1.7;
+    color: var(--c-body );
+
+
+}
+
+/* <!-- -------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------- --> */
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+    color: var(--c-dark);
+font-weight: 600;
+}
+
+a:hover{
+    color:#6970dd !important;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
+   
+}
+.boxshadow{
+    box-shadow: var(--box-shadow);
+}
+/* <!-- -------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------- --> */
+
+/* Navbar */
+.navbar{
+    box-shadow:var(--box-shadow) ;
+
+}
+.navbar-nav .nav-link{
+    font-weight: 500 ;
+    color: var(--c-dark);
+}
+.navbar-nav .nav-link.active{
+color: var(--c-brand );
+}
+/* <!-- -------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------- --> */
+
+/* buttons */
+.btn{
+    font-weight: 700 ;
+    font-size: 1rem ;
+    text-transform: uppercase;
+
+}
+.btn-brand{
+ background-color: var(--c-brand) ;
+ color: white ;
+}
+
+.btn:hover{
+  background-color: var(--c-brand-lite) !important;
+    border-color: var(--c-body);
+    color: white !important;
+
+}
+
+/* home */
+#home{
+    background:linear-gradient(rgba(141, 123, 255, 0.447), rgba(0, 0, 0, 0.683) , rgba(212, 132, 237, 0.323)), url("media/hero-1.jpg") ;
+
+    background-position: center;
+    background-size: cover;
+
+}/* <!-- -------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------- --> */
+
+/* about */
+
+.aboutheader{
+    margin-bottom: 10px;
+}
+.aboutline{
+    width: 80px;
+    height: 4px;
+    background-color: #4e57d4;
+    margin: 16px auto 24px auto;
+}
+.aboutheaderline{
+    max-width: 500px;
+    margin: 10px auto 20px auto;
+
+}
+
+.iconbox{
+    width: 75px;
+    height: 75px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(var(--c-rgb),0.1);
+    color: var(--c-brand);
+    font-size: 40px;
+    flex: none;
+}
+/* <!-- -------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------- --> */
+
+/* Service */
+.service-sub{
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+.service-sub::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-rgb),0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+.service-sub:hover:after{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: linear-gradient(rgba(78, 50, 255, 0.67), rgba(0, 0, 0, 0.683) , rgba(205, 82, 243, 0.323));
+}
+.service-sub:hover h5,
+.service-sub:hover{
+    color: gray;
+}
+.service-sub:hover .iconbox{
+    background-color: rgba(255, 255, 255, 0.275);
+    color: rgba(124, 60, 244, 0.786);
+}
+
+/* <!-- -------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------- --> */
+
+/* mid-sec */
+
+#mid-sec{
+    background:linear-gradient(rgba(111, 90, 249, 0.467), rgba(101, 87, 255, 0.55)), url("media/counter.jpg") ;
+
+
+    background-position: center;
+    background-size: cover;
+}
+
+/* <!-- -------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------- --> */
+/* contact */
+
+#contact{
+    position: relative;
+    z-index: 2;
+
+}
+#contact ::after{
+    content: "";
+    width: 100%;
+    height: 70%;
+    background:linear-gradient(rgba(111, 90, 249, 0.467), rgba(101, 87, 255, 0.55)), url("media/counter.jpg") ;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#contact.form-control{
+    border-radius: 0;
+}
+
+#contact.form-control:focus{
+    box-shadow: none;
+    border-color: var(--c-brand );
+}
+
+
+
+
+s-123 {
+    color: white;
+}
+.footer-1 ul {
+   list-style: none;
+
+}
+
+/* <!-- -------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------- --> */
+.blogcontent a{
+    text-decoration: none;
+}
+
+
+.social-icons{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.social-icons :hover{
+    color: #4e57d4;
+}
